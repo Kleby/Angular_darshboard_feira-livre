@@ -1,0 +1,19 @@
+.sidenav__container{
+    height: calc(100vh - 142px);
+    width: 100%;
+    background: #0a0a42;
+    padding: .92rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidenav__title-content{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.sidenav__title{
+    padding-left: 1rem;
+}

@@ -1,0 +1,16 @@
+.menu__container{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.menu{
+    /* border: 1px solid #88A; */
+    padding: 6px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.menu:hover{
+    background-color: #5F57FF;
+    transition: 300ms ease-in;
+}

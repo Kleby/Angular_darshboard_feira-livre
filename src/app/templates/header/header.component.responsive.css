@@ -1,0 +1,16 @@
+@media screen and (max-width: 768px) {
+    .header__menu {
+        display: block;
+    }
+
+    .header__navbar {
+        display: none;
+        height: calc(100vh - 82px);
+        position: absolute;
+        right: 0;
+        top: 5.1rem;
+        background-color: #0d0d19;
+        padding: 1rem;
+        z-index: 1;
+    }
+}

@@ -1,0 +1,40 @@
+<form class="register__container">
+    <h1 class="register__title primary-color">Cadastrar Produtos</h1>
+    <div class="register__content">
+        <div class="form__content primary-color">
+            <div class="form-group">
+                <label for="name" class="form-group__label">Nome</label>
+                <input type="text" id="name" 
+                placeholder="Galinha Pintada" class="form-group__input" />
+            </div>
+            <div class="form-group">
+                <label for="price" class="form-group__label">Preço</label>
+                <input type="number" id="price" 
+                placeholder="R$ 80,00" class="form-group__input" min="0" />
+            </div>
+            <div class="form-group">
+                <label for="amount" class="form-group__label">Quantidade</label>
+                <input type="number" id="amount" 
+                placeholder="31" class="form-group__input" min="0" />
+            </div>
+        </div>
+    
+        <div class="register__image ">
+            <div [ngStyle]="{'height': '100%'}">
+                <input type="file" id="img" style="display: none;"  (change)="onClick($event)">
+                <label for="img" class="register__image-label">
+                    <span type="button" class="select__image" 
+                    (drop)="onDrop($event)"  (dragover)="onDragOver($event)">
+                    <span class="material-symbols-outlined">
+                        upload
+                    </span>
+                </span>
+            </label>
+        </div>
+            <div *ngIf="imgSrc" class="image__preview">
+                <img [src]="imgSrc" alt="Previsualização da imagem" style="width: 100%; height: 100%;">
+            </div>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-submit">Cadastrar</button>
+</form>

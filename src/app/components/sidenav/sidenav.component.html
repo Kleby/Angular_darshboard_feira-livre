@@ -1,0 +1,35 @@
+<nav class="sidenav__container">
+
+    <div class="sidenav__main icon-text-color">
+        <div class="sidenav__title-content">
+            <span *ngIf="isToggleMenu">Menu</span>
+            <app-menu-hamburgue (handleOnToggleMenu)="onToggleMenu($event)" title="Expandir" />
+        </div>
+        <hr>
+        <app-sidenav-card [icon]="'inventory_2'" [titleCard]="'Produtos'" [isToggleMenu]="isToggleMenu" [router]="'manager'"
+            class="side-nav__link"  title="Produtos"/>
+            <div class="side-nav__link">
+                <app-sidenav-card [icon]="'attach_money'" [titleCard]="'Financeiro'" [isToggleMenu]="isToggleMenu" [router]="'manager/financial'"
+                class="side-nav__link"  title="Financeiro"/>
+                
+            </div>
+            <div class="side-nav__link">
+                <app-sidenav-card [icon]="'add'" [titleCard]="'Cadastrar'" [isToggleMenu]="isToggleMenu"
+                [router]="'manager/register'" class="side-nav__link" title="Cadastrar" />
+                
+            </div>
+            <div class="side-nav__link">
+                <app-sidenav-card [icon]="'list'" [titleCard]="'Produtos'" [isToggleMenu]="isToggleMenu"
+                [router]="'manager/products'" class="side-nav__link" title="Produtos" />
+
+        </div>
+        <div class="side-nav__link">
+            
+            <app-sidenav-card [icon]="'manage_search'" [titleCard]="'Procurar'" [isToggleMenu]="isToggleMenu" title="Procurar" />
+        </div>
+    </div>
+    <hr>
+    <div class="sidenav__tools icon-text-color">
+        <app-sidenav-card [icon]="'settings'" [titleCard]="'Configurações'" [isToggleMenu]="isToggleMenu" title="Configurações" />
+    </div>
+</nav>

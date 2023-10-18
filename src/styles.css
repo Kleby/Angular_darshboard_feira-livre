@@ -1,1 +1,60 @@
-/* You can add global styles to this file, and also import other style files */
+/* global */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Colors */
+.primary-color{
+    color: #0D0D19;
+}
+.primary-color-bg{
+    background-color: #0D0D19;
+}
+
+.secondary-color{
+    color: #5F57FF;
+}
+.secondary-color-bg{
+    background-color: #5F57FF;
+}
+
+.tertiary-color{
+    color: #e6e6eb;
+}
+.tertiary-color-bg{
+    background-color: #e6e6eb;
+}
+
+.content-color-bg{
+    background-color: #D8F6F7;
+}
+
+.icon-text-color{
+    color: #88A;
+}
+
+.white-bg{
+    background-color: #fff;
+}
+
+
+.btn{
+    padding: .7rem 1.2rem;
+    border-radius: .4rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+}

@@ -1,0 +1,19 @@
+.sidenav-card__container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: .5rem ;
+    margin: 1rem 0;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.sidenav-card__container:hover{
+    background-color: #5F57FF; 
+    color: #fff;
+    transition: 500ms ease-in-out;
+}
+
+.icon{
+    margin-right: .25rem;
+}

@@ -1,0 +1,10 @@
+<div (click)="onToggleMenu()" class="menu__container">
+    <span *ngIf="!isToggleMenu; else toggleMenu "  class="material-symbols-outlined menu">
+        menu
+    </span>
+    <ng-template #toggleMenu>
+        <span  class="material-symbols-outlined menu">
+            close
+        </span>
+    </ng-template>
+</div>
